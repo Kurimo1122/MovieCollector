@@ -13,6 +13,8 @@
 		78A6C6A91E0E7F9000AA0E7E /* MovieCollector.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 78A6C6A71E0E7F9000AA0E7E /* MovieCollector.xcdatamodeld */; };
 		78A6C6AB1E0E7F9000AA0E7E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78A6C6AA1E0E7F9000AA0E7E /* Assets.xcassets */; };
 		78A6C6AE1E0E7F9000AA0E7E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78A6C6AC1E0E7F9000AA0E7E /* LaunchScreen.storyboard */; };
+		78A6C6B61E0E94B000AA0E7E /* abouttime.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 78A6C6B51E0E94B000AA0E7E /* abouttime.jpg */; };
+		78A6C6B81E0E95BA00AA0E7E /* MovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A6C6B71E0E95BA00AA0E7E /* MovieViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		78A6C6AA1E0E7F9000AA0E7E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		78A6C6AD1E0E7F9000AA0E7E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		78A6C6AF1E0E7F9000AA0E7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		78A6C6B51E0E94B000AA0E7E /* abouttime.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = abouttime.jpg; sourceTree = "<group>"; };
+		78A6C6B71E0E95BA00AA0E7E /* MovieViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,8 +60,10 @@
 		78A6C69F1E0E7F9000AA0E7E /* MovieCollector */ = {
 			isa = PBXGroup;
 			children = (
+				78A6C6B51E0E94B000AA0E7E /* abouttime.jpg */,
 				78A6C6A01E0E7F9000AA0E7E /* AppDelegate.swift */,
 				78A6C6A21E0E7F9000AA0E7E /* ViewController.swift */,
+				78A6C6B71E0E95BA00AA0E7E /* MovieViewController.swift */,
 				78A6C6A41E0E7F9000AA0E7E /* Main.storyboard */,
 				78A6C6AA1E0E7F9000AA0E7E /* Assets.xcassets */,
 				78A6C6AC1E0E7F9000AA0E7E /* LaunchScreen.storyboard */,
@@ -129,6 +135,7 @@
 			files = (
 				78A6C6AE1E0E7F9000AA0E7E /* LaunchScreen.storyboard in Resources */,
 				78A6C6AB1E0E7F9000AA0E7E /* Assets.xcassets in Resources */,
+				78A6C6B61E0E94B000AA0E7E /* abouttime.jpg in Resources */,
 				78A6C6A61E0E7F9000AA0E7E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -143,6 +150,7 @@
 				78A6C6A31E0E7F9000AA0E7E /* ViewController.swift in Sources */,
 				78A6C6A91E0E7F9000AA0E7E /* MovieCollector.xcdatamodeld in Sources */,
 				78A6C6A11E0E7F9000AA0E7E /* AppDelegate.swift in Sources */,
+				78A6C6B81E0E95BA00AA0E7E /* MovieViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

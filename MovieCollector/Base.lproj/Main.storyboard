@@ -39,7 +39,7 @@
                     <navigationItem key="navigationItem" id="D0r-Fd-AJv">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="vrY-ss-avh">
                             <connections>
-                                <segue destination="4ea-6o-sGQ" kind="show" id="cSA-10-0u5"/>
+                                <segue destination="4ea-6o-sGQ" kind="show" identifier="movieSegue" id="cSA-10-0u5"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -83,12 +83,22 @@
                                     <action selector="addTapped:" destination="4ea-6o-sGQ" eventType="touchUpInside" id="9x1-0D-LrT"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g1F-1W-Fax">
+                                <rect key="frame" x="165" y="352" width="45" height="30"/>
+                                <state key="normal" title="Delete"/>
+                                <connections>
+                                    <action selector="addTapped:" destination="4ea-6o-sGQ" eventType="touchUpInside" id="6aV-CE-JgU"/>
+                                    <action selector="deleteTapped:" destination="4ea-6o-sGQ" eventType="touchUpInside" id="AiF-0O-eAV"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="F74-KH-jNk" firstAttribute="width" secondItem="nur-QD-B88" secondAttribute="width" id="JiR-jN-fzg"/>
+                            <constraint firstItem="g1F-1W-Fax" firstAttribute="centerX" secondItem="ija-t5-gFH" secondAttribute="centerX" id="LEb-zq-aUl"/>
                             <constraint firstItem="F74-KH-jNk" firstAttribute="centerX" secondItem="ija-t5-gFH" secondAttribute="centerX" id="ZC0-dH-gjf"/>
                             <constraint firstItem="20c-jj-KQK" firstAttribute="centerX" secondItem="ija-t5-gFH" secondAttribute="centerX" id="cSa-N3-vj0"/>
+                            <constraint firstItem="g1F-1W-Fax" firstAttribute="top" secondItem="20c-jj-KQK" secondAttribute="bottom" constant="10" id="dl9-Qz-qFQ"/>
                             <constraint firstItem="nur-QD-B88" firstAttribute="top" secondItem="RL0-9y-cLg" secondAttribute="bottom" constant="20" id="h6s-yz-OZv"/>
                             <constraint firstItem="nur-QD-B88" firstAttribute="centerX" secondItem="ija-t5-gFH" secondAttribute="centerX" id="npR-er-pEO"/>
                             <constraint firstItem="F74-KH-jNk" firstAttribute="top" secondItem="nur-QD-B88" secondAttribute="bottom" constant="28" id="nus-6N-uv4"/>
@@ -110,13 +120,15 @@
                         </rightBarButtonItems>
                     </navigationItem>
                     <connections>
+                        <outlet property="addUpdateButton" destination="20c-jj-KQK" id="Ie5-5M-mSG"/>
+                        <outlet property="deleteButton" destination="g1F-1W-Fax" id="5P6-a0-5Qy"/>
                         <outlet property="movieImageView" destination="nur-QD-B88" id="SHv-dz-JyJ"/>
                         <outlet property="titleTextField" destination="F74-KH-jNk" id="mOn-uQ-aP0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ocF-pJ-gVE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1734" y="140"/>
+            <point key="canvasLocation" x="1733.5999999999999" y="139.880059970015"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="OzQ-45-rx8">
